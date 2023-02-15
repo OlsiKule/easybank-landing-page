@@ -20,7 +20,7 @@
     
     .overlay {
         position: fixed;
-        top: 3.75rem;
+        top: 0px;
         right: 0;
         bottom: 0;
         left: 0;
@@ -28,7 +28,11 @@
     }
 
     nav{
-        padding: 1.0625rem 1.5rem;
+        position: relative;
+        background-color: $white;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+
     }
 
     &__logo {
@@ -57,8 +61,14 @@
     }
 
     &__menu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
         background: $white;
+        margin-top: 1.5rem;
         padding: 1.625rem;
+        border-radius: 5px;
         
         a {
             display: block;
