@@ -2,11 +2,8 @@
     // Hamburger Open Styles
     &.open {
 
-        .overlay {
-            animation: fade-in 300ms ease-in-out forwards;
-        }
-
-        .header__menu {
+      
+        .header__toggle {
             >span:first-child {
                 transform: rotate(45deg);
             }
@@ -19,10 +16,9 @@
                 transform: rotate(-45deg);
             }
         }
-}
+     }
     
     .overlay {
-        display: none;
         position: fixed;
         top: 3.75rem;
         right: 0;
@@ -42,7 +38,7 @@
         }
     }
 
-    &__menu{ //Mobile menu
+    &__toggle{ //Mobile Toggle Menu
 
         > span {
             display: block;
@@ -59,6 +55,20 @@
 
         
     }
+
+    &__menu {
+        background: $white;
+        padding: 1.625rem;
+        
+        a {
+            display: block;
+            color: $darkBlue;
+            padding: 0.625rem;
+            text-align: center;
+        }
+    }
+
+
 
     &__links{
         a {
