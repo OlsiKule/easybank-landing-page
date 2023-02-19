@@ -415,4 +415,29 @@ button:hover, .button:hover {
 .feature__description {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.articles {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.article__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 40em) {
+  .article__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64em) {
+  .article__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.article__image {
+  height: 12.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }/*# sourceMappingURL=style.css.map */
