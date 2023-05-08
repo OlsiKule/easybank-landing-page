@@ -257,6 +257,7 @@ button:hover::before, .button:hover::before {
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 5px;
+  z-index: 1;
 }
 .header__menu a {
   display: block;
@@ -473,7 +474,7 @@ button:hover::before, .button:hover::before {
 }
 @media (min-width: 40em) {
   .article__text {
-    padding: 1.875rem 1, 5625rem;
+    padding: 1.875rem 1.5625rem;
   }
 }
 .article__author {
