@@ -320,7 +320,8 @@ button:hover::before, .button:hover::before {
   .hero__image {
     flex: 3;
     order: 2;
-    min-height: 41rem;
+    height: 41rem;
+    background-image: none;
   }
 }
 @media (min-width: 64em) {
